@@ -1,37 +1,24 @@
 # Capstone-Project
 
-Pipeline for an ETL process and code for the ML-model to classify messages during a disaster. A web app is also produced to visualise the training data.
+This repository contains the code required to build a ML-model in PySpark to predict the users who will churn, using Sparkify data. It also contains a blog, in a pdf format, describing this process in detail.
 
 **Installation**
 
 This code has a number of required dependencies which have to be pre-installed to work. They include:
 
-- numpy
-- pandas
-- nltlk
-- sklearn
-- sqlalchemy
-- pickle
-
-The two datasets required are attached in this repository (data/disaster_categories.csv and data/disaster_messages.csv).
+- SparkSession
+- Pandas
+- Matplotlib
+- The dataset is provided by udacity - "mini_sparkify_event_data.json"
 
 **Motivation** 
 
-The motivation behind this project was classify messages sent during a disaster. By doing this, the response can be significantly improved and streamlined, allowing the most vulnreable to be found quicker. 
+The motivation behind this project was to showcase the ability of PySpark to provide business value to a company. Specifically, we wanted to use Spark Machine Learning library to predict which of Sparkify's users will churn. PySpark is very suitable for this due to it's cluster computing, meaning it can process a large amount of data without creating a bottleneck. For the purpose of this project though, the local mode was utilised however this can easily be scaled onto cloud platforms such as AWS.
 
 **Files**
 
-- process_data.py - ETL pipeline to merge and clean the data used in this project.
-- train_classifier.py - The code used to build the ML-model.
-- run.py - The code to run the web app.
-
-**Usage**
-
-To use the files, run the following commands;
-- "python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db"
-- "python models/train_classifier.py data/DisasterResponse.db models/classifier"
-- "cd app"
-- "python run.py"
+- Sparkify.ipynb - PySpark code used in this project.
+- Data Science Capstone Blog.pdf - 
 
 **Author**
 
