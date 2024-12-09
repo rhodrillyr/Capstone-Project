@@ -18,7 +18,7 @@ The motivation behind this project was to showcase the ability of PySpark to pro
 **Files**
 
 - Sparkify.ipynb - PySpark code used in this project.
-- Data Science Capstone Blog.pdf - 
+- Data Science Capstone Blog.pdf - A blog describing the process.
 
 **Author**
 
